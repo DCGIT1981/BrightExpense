@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="TestCases.Listeners"/>
+</listeners>
+
+  <test thread-count="5" name="Test">
+   <classes>
+<class name="TestCases.TC_AddExpense_EatingOnSite_PositiveValue" /> 
+<class name ="TestCases.TC_Add_Edit_Delete_BatchExpense" />
+<class name ="TestCases.TC_Add_Edit_Delete_Expense" />
+<class name ="TestCases.TC_Add_Edit_Delete_ExpenseSubmission" />
+<class name ="TestCases.TC_AddExpense_EatingOnSite_NegativeValue" />
+<class name ="TestCases.TC_AddExpense_EatingOnSite_PositiveValue" />
+<class name ="TestCases.TC_AddExpense_EatingOnSite_ZeroValue" />
+<class name ="TestCases.TC_AddExpense_EmergencyTravel_NegativeValue" />
+<class name ="TestCases.TC_AddExpense_EmergencyTravel_PositiveValue" />
+<class name ="TestCases.TC_AddExpense_EmergencyTravel_ZeroValue" />
+<class name ="TestCases.TC_AddExpense_RMT_NegativeValue" />
+<class name ="TestCases.TC_AddExpense_RMT_PositiveValue" />
+<class name ="TestCases.TC_AddExpense_TravelUnvouched_ZeroValue" />
+<class name ="TestCases.TC_AdvancePaymentCheckboxValidationInAddExpensePopUp" />
+<class name ="TestCases.TC_EmployerSettings" />
+<class name ="TestCases.TC_EmployersPage" />
+<class name ="TestCases.TC_LoginPage" />
+ </classes>
+    
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

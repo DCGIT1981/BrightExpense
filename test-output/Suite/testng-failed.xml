@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="TestCases.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestCases.TC_LoginPage">
+        <methods>
+          <include name="LoginPage"/>
+          <include name="teardown"/>
+          <include name="startbrowser"/>
+        </methods>
+      </class> <!-- TestCases.TC_LoginPage -->
+      <class name="TestCases.TC_Add_Edit_Delete_Expense">
+        <methods>
+          <include name="teardown"/>
+          <include name="AddEditDeleteExpenseCheck"/>
+          <include name="startbrowser"/>
+        </methods>
+      </class> <!-- TestCases.TC_Add_Edit_Delete_Expense -->
+      <class name="TestCases.TC_Add_Edit_Delete_BatchExpense">
+        <methods>
+          <include name="AddEditDeleteBatchExpenseCheck"/>
+          <include name="teardown"/>
+          <include name="startbrowser"/>
+        </methods>
+      </class> <!-- TestCases.TC_Add_Edit_Delete_BatchExpense -->
+      <class name="TestCases.TC_EmployerSettings">
+        <methods>
+          <include name="teardown"/>
+          <include name="EmployerSettings"/>
+          <include name="startbrowser"/>
+        </methods>
+      </class> <!-- TestCases.TC_EmployerSettings -->
+      <class name="TestCases.TC_AddExpense_EatingOnSite_PositiveValue">
+        <methods>
+          <include name="teardown"/>
+          <include name="AddExpense_EatingOnSite_PositiveValue"/>
+          <include name="startbrowser"/>
+        </methods>
+      </class> <!-- TestCases.TC_AddExpense_EatingOnSite_PositiveValue -->
+      <class name="TestCases.TC_AddExpense_TravelUnvouched_ZeroValue">
+        <methods>
+          <include name="AddExpense_TravelUnvouched_ZeroValue"/>
+          <include name="teardown"/>
+          <include name="startbrowser"/>
+        </methods>
+      </class> <!-- TestCases.TC_AddExpense_TravelUnvouched_ZeroValue -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
